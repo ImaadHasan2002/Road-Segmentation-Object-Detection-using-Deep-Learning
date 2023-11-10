@@ -64,7 +64,7 @@ The CARL-Dataset – a benchmark designed for drivable road region detection on 
 We have seamlessly integrated our own dataset, enhancing the diversity and complexity of object detection scenarios.
 
 ### PotholeDataset Inclusion
-To further enrich your model's understanding, we've incorporated the PotholeDataset, ensuring your drivable road region detection system is adept at identifying potential road hazards.
+To further enrich your model's understanding, we've incorporated the PotholeDataset, ensuring drivable road region detection system is adept at identifying potential road hazards.
 
 ## Getting Started
 
@@ -114,5 +114,8 @@ To further enrich your model's understanding, we've incorporated the PotholeData
 
 - **metrics.py:**
   Helper functions to measure performance metrics.
+  
+- **yolov8.py:**
+  implementation for real-time object detection with seamless integration, training support, and customization options.
 
 Feel free to explore, experiment, and contribute to advancing drivable road region detection for autonomous driving! 🚗💨
