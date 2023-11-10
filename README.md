@@ -119,3 +119,35 @@ To further enrich your model's understanding, we've incorporated the PotholeData
   implementation for real-time object detection with seamless integration, training support, and customization options.
 
 Feel free to explore, experiment, and contribute to advancing drivable road region detection for autonomous driving! 🚗💨
+## How to Run the Python Scripts
+
+### For Training
+1. Train the model for the first time on the road detection dataset CARL-DATASET.
+2. Before starting training, place the downloaded dataset folders (train, train_labels, test, test_labels, val, and val_labels) in the CARL-Dataset directory.
+3. After completion, verify the root paths and other configurations in 'config.py'.
+4. Run the following command:
+    ```bash
+    python train.py --resume-training no
+    ```
+
+### For Testing (Image)
+- Test the model on an image using the following command:
+    ```bash
+    python test_road_detection.py --model-path <path to saved checkpoint/weight file> --input <path to image>
+    ```
+    Example:
+    ```bash
+    python test_road_detection.py --model-path model.pth --input abc.jpg
+    ```
+
+### For Testing (Video)
+- Test the model on a video using the following command:
+    ```bash
+    python test_vid.py --input <path to video> --model-path <path to saved checkpoint/weight file>
+    ```
+    Example:
+    ```bash
+    python test_vid.py --input DSC_0006.mp4 --model-path model.pth
+    ```
+
+Make sure to adjust paths and filenames according to the specific setup.
