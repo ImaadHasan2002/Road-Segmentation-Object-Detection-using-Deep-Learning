@@ -1,0 +1,9 @@
+torch>=2.0.1
+torchvision>=0.15.2
+ultralytics>=8.0.0
+albumentations>=1.0.3
+opencv-python>=4.5
+numpy
+matplotlib
+Pillow
+tensorboardX>=2.2
